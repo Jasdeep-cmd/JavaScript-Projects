@@ -1,0 +1,43 @@
+body{
+    background-color: #333233;
+}
+
+#container{
+    height: 300px;
+    width: 500px;
+    border: 10px solid #926981;
+    margin: 100px auto;
+    background-color: #888961;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+#number{
+    height: 25px;
+    width: 250px;
+    margin: 50px auto;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+#increment{
+    height: 25px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 125px;
+    border: 2px solid black;
+}
+#decrement{
+    height: 25px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 2px solid black;
+}
+
+
+
+
