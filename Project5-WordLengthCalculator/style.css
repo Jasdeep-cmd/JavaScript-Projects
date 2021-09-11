@@ -1,0 +1,32 @@
+body{
+    background-color:grey;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+#container{
+    height: 125px;
+    width: 350px;
+    background-color: hotpink;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#word{
+    margin-left: 10px;
+}
+
+
+#output{
+    height: 25px;
+    width: 300px ;
+    background-color: blanchedalmond;
+    margin: 25px auto;
+    padding-left: 5px;
+    font-size: 24px;
+    text-align: center;
+}
