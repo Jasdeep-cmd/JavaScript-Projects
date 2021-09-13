@@ -1,0 +1,25 @@
+body{
+    background-color: grey;
+}
+
+#container{
+    height: 200px;
+    width: 550px;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#output{
+    font-size: 25px;
+    text-align: center;
+}
+
+#date{
+    font-size: 25px;
+    text-align: center;
+}
