@@ -1,0 +1,26 @@
+body{
+    background-color: grey;
+}
+
+#container{
+    height: 300px;
+    width: 750px;
+    background-color: pink;
+    border: 2px solid black;
+    text-align: center;
+    margin:auto;
+}
+
+p{
+    color: black;
+    font-size: 25px;
+}
+
+#userinput{
+    width: 100px;
+    margin: 25px auto;
+}
+
+#btn{
+    margin: 25px auto auto 10px;
+}
