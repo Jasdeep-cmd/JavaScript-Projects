@@ -1,0 +1,38 @@
+html,body{
+    margin: 0 auto;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 360px;
+}
+
+#input{
+    height: 50px;
+    width: 300px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#bttn{
+    height: 54px;
+    width: 54px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.to-do{
+    margin-top: 25px;
+}
+
+.paragraph-style{
+    margin: 0;
+    cursor: pointer;
+    font-size: 22px
+}
+
+
