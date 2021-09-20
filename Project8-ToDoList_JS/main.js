@@ -18,7 +18,6 @@ btn.addEventListener('click',function(){
     paragraph.addEventListener('dblclick',function(){
         output.removeChild(paragraph);
     });
-
 });
 
 
