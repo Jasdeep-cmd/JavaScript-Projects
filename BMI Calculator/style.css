@@ -1,0 +1,67 @@
+html{
+    background-color: grey;
+    height: 100%;
+}
+
+#container{
+    height: 300px;
+    width: 550px;
+    background-color: hotpink;
+    margin: 0 auto;
+    border: 5px solid green;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 100px 1fr 1fr;
+}
+#w-input{
+    height: 25px;
+    width: 250px;
+    grid-area: 1/2/1/3;
+    align-self: center;
+}
+#wlabel{
+    grid-area: 1/2/1/3;
+}
+
+#h-input{
+    height: 25px;
+    width: 250px;
+    grid-area: 2/2/2/3;
+    align-self: center;
+}
+
+#hlabel{
+    grid-area: 2/2/2/3;
+}
+
+#bmi-output{
+    height: 25px;
+    width: 250px;
+    grid-area: 3/2/3/3;
+    align-self: center;
+}
+#olabel{
+    grid-area: 3/2/3/3;
+}
+
+#bttn{
+    height: 25px;
+    width: 75px;
+    grid-area: 2/3/2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+#table{
+    height: 100px;
+    width: 550px;
+    background-color: hotpink;
+    margin: 0 auto;
+    border: 5px solid green ;
+}
+
+table,th,td{
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+}
