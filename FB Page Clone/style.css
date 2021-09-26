@@ -1,135 +1,135 @@
-htm{
+html {
     height: 100%;
 }
-body{
+body {
     height: 100%;
     margin: 0 auto;
     overflow-y: hidden;
 }
-#container{
+
+#container {
     height: 100%;
 }
-/* 
-........................................Navbar.............................. */
-
-#navbar{
-    background-color:  #3b5998;
+/*---------------------------Navbar------------------------*/
+#navbar {
+    background-color: #3b5998;
     display: grid;
-    grid-template-columns: repeat(15,1fr);
+    grid-template-columns: repeat(15, 1fr);
     grid-template-rows: 28.3px 28.3px 28.3px;
-    grid-template-areas:
-    ". . . . logo . . . email-tag password-tag . ."
-    ". . . . logo . . . email password login ."
-    ". . . . logo . . . . forget . .";
+    grid-template-areas: 
+    ". . . . logo . . . email-label password-label . ."
+    ". . . . logo . . . email password login-btn ."
+    ". . . . logo . . . . forgot . .";
 }
 
-#logo{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    grid-area:logo ;
+#logo {
+    grid-area: logo;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 46px;
     color: white;
-    align-self: center;
     margin-bottom: 15px;
+    align-self: center;
 }
-#email-tag{
+#email-label {
+    grid-area: email-label;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    grid-area:email-tag ;    
-}
-#password-tag{
-    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    grid-area:password-tag ;
 }
-#email{
+#email {
+    grid-area: email;
     height: 20px;
     width: 150px;
-    align-self: end;
-    grid-area:email ;   
     border: 1px solid black;
+    align-self: end;
     margin-right: 15px;
 }
-#password{
+#password-label {
+    grid-area: password-label;
+    font-size: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#password {
+    grid-area: password;
     height: 20px;
     width: 150px;
-    align-self: end;
     border: 1px solid black;
-    grid-area:password ;
+    align-self: end;
     margin-right: 15px;
 }
-#login{
+#forgot {
+    grid-area: forgot;
+    text-decoration: none;
+    color: #9cb4d8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    align-self: center;
+}
+#login-btn {
+    grid-area: login-btn;
     height: 22px;
     width: 50px;
     background-color: #4267b2;
-    color:white;
-    border-style:none;
-    align-self: end;
-    grid-area:login ;   
-    padding: 0;
+    color: white;
+    border-style: none;
     border: 1px solid #29487d;
     font-weight: bold;
-}
-#forget{
-    grid-area:forget ;
-    text-decoration: none;
-    color: white;
+    padding: 0;
+    align-self: end;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    align-self: center;
 }
 
-/* ........................Main Area......................... */
-#main-area{
+/*------------------------------MAIN--------------------------*/
+#main {
     height: 100%;
     display: grid;
-    grid-template-columns: 450px 550px 430px 500px;
-    grid-template-rows: repeat(12,1fr) auto; 
+    grid-template-columns: 450px 540px 430px 500px;
+    grid-template-rows: repeat(12, 1fr) auto;
     grid-template-areas: 
-    ". header-text signup ."
-    ". first-image first-input ."
-    ". second-image . ."
-    ". third-image . ."
+    ". headertext signup ."
+    ". first-img first-input ."
+    ". second-img . ."
+    ". third-img . .";
 }
-#header-text{
-    grid-area: header-text;
+#header-text {
+    grid-area: headertext;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#first-image{
-    grid-area: first-image;
-}
-#second-image{
-    grid-area: second-image;
-}
-#third-image{
-    grid-area: third-image;
-}
-#first-text{
-    grid-area: 2/2/2/3;
-}
-#second-text{
-    grid-area: 3/2/3/3;
-}
-#third-text{
-    grid-area: 4/2/4/3;
-}
 
-.text-styling{
+.text-styling {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     align-self: center;
-    margin:0 0 120px 70px;
+    margin: 0 0 20px 70px;
 }
-
-.fb-image{
+.fb-icon {
     margin-bottom: 20px;
 }
 
-/* .................right side............... */
+#first-img {
+    grid-area: first-img;
+}
+#first-text {
+    grid-area: 2 / 2 / 2 / 3;
+}
+#second-img {
+    grid-area: second-img;
+}
+#second-text {
+    grid-area: 3 / 2 / 3 / 3;
+}
+#third-img {
+    grid-area: third-img;
+}
+#third-text {
+    grid-area: 4 / 2 / 4 / 3;
+}
+
+/*------------------Right Side-----------------------------*/
 #signup {
     grid-area: signup;
     font-family: Arial, Helvetica, sans-serif;
@@ -176,3 +176,149 @@ body{
 }
 
 
+.birthday {
+    height: 30px;
+    width: 55px;
+    margin-top: 70px;
+}
+
+#bday-label {
+    grid-area: 3 / 3 / 3 / 3;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #90949c;
+    font-size: 18px;
+}
+#month {
+    grid-area: 3 / 3 / 3 / 3;
+}
+#day {
+    grid-area: 3 / 3 / 3 / 3;
+    margin-left: 54px;
+}
+#year {
+    grid-area: 3 / 3 / 3 / 3;
+    margin-left: 108px;
+}
+
+#gender-label {
+    grid-area: 4 / 3 / 4 / 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #90949c;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.radio-style {
+    margin-top: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 0px;
+    margin-bottom: 10px;
+}
+
+#male {
+    grid-area: 4 / 3 / 4 / 3;
+}
+#m-label {
+    grid-area: 4 / 3 / 4 / 3;
+    margin-left: 25px;
+}
+#female {
+    grid-area: 4 / 3 / 4 / 3;
+    margin-left: 100px;
+}
+#f-label {
+    grid-area: 4 / 3 / 4 / 3;
+    margin-left: 120px;
+}
+#other {
+    grid-area: 4 / 3 / 4 / 3;
+    margin-left: 220px;
+}
+#o-label {
+    grid-area: 4 / 3 / 4 / 3;
+    margin-left: 240px;
+}
+#tos {
+    grid-area: 5 / 3 / 5 / 3;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+}
+#tos a {
+    text-decoration: none;
+    color: #385898;
+}
+
+#signup-btn {
+    height: 40px;
+    width: 200px;
+    grid-area: 6 / 3 / 6 / 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: linear-gradient(#67ae55, #578843);
+}
+
+#below-signup {
+    grid-area: 7 / 3 / 7 / 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    border-top: 1px solid rgba(128, 128, 128, 0.363);
+    padding-top: 15px;
+    margin-top: -5px;
+}
+#below-signup a {
+    text-decoration: none;
+    color: #385898;
+}
+/*------------------FOOTER----------------*/
+#footer {
+    grid-area: 8 / 2 / 8 / 4;
+    align-self: end;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -7px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+}
+#footer a {
+    text-decoration: none;
+    color: #385898;
+    margin-left: 5px;
+}
+#plus-btn {
+    width: 30px;
+    margin-left: 5px;
+}
+
+
+#footer-2 {
+    grid-area: 9 / 2 / 9 / 4;
+    align-self: start;
+}
+
+#footer-2 a {
+    text-decoration: none;
+    color: #385898;
+    margin-left: 5px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright {
+    grid-area: 10 / 2 / 10 / 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #737373;
+}
+
+#container a:hover {
+    text-decoration: underline;
+}
